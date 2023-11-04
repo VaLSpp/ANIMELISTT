@@ -29,7 +29,7 @@ const InputSearch = () => {
                 onKeyDown={handleSearch}
             />
             <button className="absolute top-2 end-2" onClick={handleSearch}>
-                <MagnifyingGlass size={24} />
+                <MagnifyingGlass size={23} />
             </button>
         </div>
     )
