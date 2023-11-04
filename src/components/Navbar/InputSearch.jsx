@@ -11,7 +11,7 @@ const InputSearch = () => {
     const handleSearch = (event) => {
         const keyword = searchRef.current.value
 
-        if(!keyword) return
+        if(!keyword || keyword.trim() == "") return
 
         if(event.key === "Enter" || event.type === "click") {
             event.preventDefault()
@@ -23,7 +23,7 @@ const InputSearch = () => {
     return (
         <div className="relative">
             <input 
-                placeholder="cari anime..." 
+                placeholder="Cari Anime" 
                 className="w-full p-2 rounded"
                 ref={searchRef} 
                 onKeyDown={handleSearch}
